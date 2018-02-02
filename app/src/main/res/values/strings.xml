@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string name="proion">Προιον</string>
+    <string name="kila">κιλά</string>
+    <string name="timi">Τιμή</string>
+    <string name="date">Ημερ/ια</string>
+
+</resources>
