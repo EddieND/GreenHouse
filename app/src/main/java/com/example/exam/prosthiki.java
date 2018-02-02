@@ -30,6 +30,8 @@ edit_timi = (EditText)findViewById(R.id.timi);
 edit_kg = (EditText)findViewById(R.id.kg);
 edit_date =(EditText)findViewById(R.id.date);
 
+
+//ανοιγουμε την βαση
 myHelper = new DatabaseHelper(this);
 db = myHelper.getWritableDatabase();
 
@@ -37,7 +39,7 @@ db = myHelper.getWritableDatabase();
 
 
 
-
+//προσθηκη στοιχείων
     public void insertData(View view) {
         boolean isinserted = myHelper.addInfo(edit_name.getText().toString(),edit_kg.getText().toString(),edit_timi.getText().toString(),edit_date.getText().toString());
 

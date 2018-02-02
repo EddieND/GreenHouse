@@ -20,13 +20,13 @@ private static final String DB_NAME = "NAME";
     private static final String DB_DATE = "DATE";
     private static final Integer DATABASE_VERSION = 1;
 
-
+//δηλωση βασης
     public DatabaseHelper(Context context){
         super(context,TABLE_NAME ,null, DATABASE_VERSION);
     }
 
 
-
+//στην δημιουργια
     @Override
     public void onCreate(SQLiteDatabase db) {
 db.execSQL("create table " +TABLE_NAME + "(NAME TEXT, KG TEXT, TIMI TEXT, DATE TEXT)");
@@ -40,7 +40,7 @@ db.execSQL("create table " +TABLE_NAME + "(NAME TEXT, KG TEXT, TIMI TEXT, DATE T
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
-
+//συναρτηση για να προσθεσουμε τις τιμες στην βαση
     public boolean addInfo(String name, String kg,String timi, String date) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -51,7 +51,7 @@ db.execSQL("create table " +TABLE_NAME + "(NAME TEXT, KG TEXT, TIMI TEXT, DATE T
         db.insert(TABLE_NAME,null,cv);
         return true;
     }
-
+//συναρτηση για να εμφανισουμε ολες τις τιμες
 public Cursor getAllData(){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor result=db.rawQuery("SELECT * FROM "+ TABLE_NAME,null);

@@ -10,7 +10,7 @@
         android:id="@+id/l2"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#265F5D"
+        android:background="#FFFFFF"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +54,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="insertData"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
             android:text="Add" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

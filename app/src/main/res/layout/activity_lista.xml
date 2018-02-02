@@ -3,7 +3,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.exam.Lista">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/proion"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/proion"
+            android:textColor="#f00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kila"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/kila"
+            android:textColor="#f00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timi"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/timi"
+            android:textColor="#f00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/imerom"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="#f00"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/list_view"

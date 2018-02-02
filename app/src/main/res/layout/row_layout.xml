@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="60dp">
+    android:layout_height="60dp"
+    android:orientation="horizontal">
 
     <TextView
         android:id="@+id/textN"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="@string/proion" />
+        android:text="@string/proion"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textK"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="@string/kila" />
+        android:text="@string/kila"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textT"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="@string/timi" />
+        android:text="@string/timi"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textD"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="@string/date" />
+        android:text="@string/date"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

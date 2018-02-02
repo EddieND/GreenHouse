@@ -16,6 +16,8 @@ DatabaseHelper mDatabaseHelder;
 private Button btnadd;
 
 
+
+//add button
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,7 @@ private Button btnadd;
         });
 
 
-
+//show button το onClick ειναι στο layout
     }
     public void showProsthikes(View view){
         Intent intent = new Intent(getApplicationContext(),Lista.class);

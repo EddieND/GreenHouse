@@ -27,8 +27,10 @@ cursor = myHelper.getAllData();
 listAdapter = new ListAdapter(getApplicationContext(),R.layout.row_layout);
 listView.setAdapter(listAdapter);
 
-if (cursor.moveToFirst()){
 
+
+//προσθηκη στοιχείων στην λιστα με χρηση αντικειμένου
+if (cursor.moveToFirst()){
 
     do  {
 String name,kg,timi,date;
