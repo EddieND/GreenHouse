@@ -14,6 +14,7 @@ import android.widget.Toast;
 public class DatabaseHelper extends SQLiteOpenHelper{
 private static final String DATABASE_NAME = "myDatabase";
 private static final String TABLE_NAME = "GreenHouse";
+private static final String COLUMN_LONG ="_ID";
 private static final String DB_NAME = "NAME";
     private static final String DB_KG = "KG";
     private static final String DB_TIMI = "TIMI";
@@ -29,7 +30,7 @@ private static final String DB_NAME = "NAME";
 //στην δημιουργια
     @Override
     public void onCreate(SQLiteDatabase db) {
-db.execSQL("create table " +TABLE_NAME + "(NAME TEXT, KG TEXT, TIMI TEXT, DATE TEXT)");
+db.execSQL("create table " +TABLE_NAME + "(_ID INTEGER PRIMARY KEY, NAME TEXT, KG TEXT, TIMI TEXT, DATE TEXT)");
         Log.e("DATABASE", "Δημιουργήθηκε η Βάση");
 
     }
@@ -57,7 +58,11 @@ public Cursor getAllData(){
         Cursor result=db.rawQuery("SELECT * FROM "+ TABLE_NAME,null);
         return result;
 }
-
+    public void deleteCoo(int num){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME + " WHERE " + COLUMN_LONG + "=\"" + Integer.toString(num) + "\";");
+        db.close();
+    }
 
 
 

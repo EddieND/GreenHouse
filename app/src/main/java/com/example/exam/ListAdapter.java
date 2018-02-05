@@ -3,6 +3,7 @@ package com.example.exam;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by ndreca on 1/2/2018.
@@ -82,6 +85,13 @@ DataProvider dataProvider=(DataProvider)this.getItem(position);
         layoutHandler.TIMI.setText(dataProvider.getTimi());
         layoutHandler.DATE.setText(dataProvider.getDate());
         return row;
+
+    }
+
+    public void rem(int pos) {
+        Log.i(TAG,"Entering remove");
+        list.remove(pos);
+        notifyDataSetChanged();
 
     }
 }
